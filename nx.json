@@ -1,0 +1,28 @@
+{
+  "npmScope": "demo",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "react-express-demo": {
+      "tags": []
+    },
+    "react-express-demo-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-express-demo"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
